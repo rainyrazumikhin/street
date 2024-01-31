@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+h1.h5 {
+    margin: 0;
+}
+.btn__dark {
+    display: inline-block;
+    background-color: rgb(8, 0, 0);
+    color: rgb(255, 203, 203);
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 100px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: all 0.4s;
+}
+.btn__dark:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.margin__top {
+    margin-top: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: rgb(59, 3, 3);
+    
+}
+.navbar ul li {
+    display: inline-block;
+}
+.navbar ul li a {
+    display: block;
+    color: rgb(226, 109, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px 20px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.sub-menu {
+    display: none;
+}
+.navbar ul li:hover {
+    background-color: rgba(255, 223, 223, 0.904);
+    border-radius: 3px;
+}
+
+.navbar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+
+.heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/simit.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.heroText {
+    color: #fff;
+    text-align: center;
+    
+}
+.heroText h1 {
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.heroText p {
+    font-size: 15px;;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.recipeSection {
+    padding: 10px 10px;
+}
+.container {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  
+  
+}
+.container a {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    text-align: center;
+    display:block;
+    overflow:auto;
+
+    margin: 0 auto;
+}
+/* .container a{
+    display: block;
+    height: 25px;
+    background: rgb(59, 3, 3);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    padding: 0 7px;
+    width: 100px;
+    max-height: 100px;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    letter-spacing: 2px;
+    color: white;
+    
+} */
+.recipeSection {
+    text-align: center;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    text-align: center;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20x;
+    margin: 0;
+    opacity: 0;
+
+}
+.panel.active{
+    flex: 5;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    text-align: center;
+ 
+
+}
+.panelContinents {
+    text-align: center;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(68, 0, 0);
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+.imageWrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.4s;
+    text-align: center;
+    align-items: center;
+}
+.imageWrapper:hover img{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+.container h3 {
+    padding: 0 7px;
+    width: 100%;
+    max-height: 100px;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+
+    letter-spacing: 2px;
+    color: white;
+}
+.imageWrapperText h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.imageWrapperText p {
+    line-height: 10px;
+}
+.swiper-wrapper {
+    align-items: center;
+    
+}
+#bottom {
+    
+    margin-left: 10%;
+}
+#top {
+    margin-top: 70px;
+}
+.iran {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/iran.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+   
+}
+.india {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/india.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.japan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/japan.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.thailand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/thailand.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.mongolia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/mongolia.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.egypt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/egypt.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.kenya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/kenya.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.morocco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/morocco.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.senegal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/senegal.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.tunisia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/tunisia.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.australia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/australia.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.frenchPolynesia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/frenchpol.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.newZealand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/newzel.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.usa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/usa.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.cuba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/cuba.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.chile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/chile.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.brazil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/brazil.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.mexico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/mexico.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.turkey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/turkey.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.hungary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/hungary.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.italy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/italy.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.poland {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/poland.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.portugal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image:linear-gradient(rgb(255, 196, 196),rgb(255, 196, 196)), url("../img/portugal.jpeg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    
+}
+.title h1 {
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10px;
+    display: inline;
+    text-align: left;
+  
+}
+.title p {
+    letter-spacing: 5px;
+    font-style: italic;
+    text-align: right;
+    text-transform: uppercase;
+}
+.food {
+    letter-spacing: 5px;
+    font-weight: 500;
+    
+}
+#description {
+    width: 100%;
+}
+#description img {
+   
+    margin-left: 2%;
+    margin-top: 5%;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+#description p {
+    margin-top: 2%;
+    margin-left: 1%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+
+}
+#yemekler h3 {
+    letter-spacing: 5px;
+    margin-left:  1%;
+    font-size: 30px;
+}
+#yemekler {
+    text-align: center;
+}
+#yemekler p{
+    letter-spacing: 5px; 
+    text-align: left;
+    margin-left:  1%;
+}
+#form{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+#form h3 {
+    margin-top: 20px;
+}
+:root {
+    --ana-renk: rgb(255, 227, 227);
+}
+input{
+    margin-top: 20px;
+    border-radius: 3px;
+    height: 25px;
+    border-style: hidden;
+    background-color: var(--ana-renk);
+}
+
+
+
+
+

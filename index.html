@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blogy</title>
+
+    <style>
+        img {
+            width: 50%;
+            margin: auto;
+            display: block;
+        }
+    </style>
+
+    
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i>Home</a>
+            </li>
+            <li id="continents">
+                <a href="#cont"><i class="fa-solid fa-earth-europe"></i>Continents</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li>
+                            <a href="africa.html">AFRICA</a>
+                        </li>
+                        <li>
+                            <a href="america.html">AMERICA</a>
+                        </li>
+                        <li>
+                            <a href="asia.html">ASIA</a>
+                        </li>
+                        <li>
+                            <a href="europe.html">EUROPE</a>
+                        </li>
+                        <li>
+                            <a href="oceania.html">OCEANIA</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="recipes.html"><i class="fa-solid fa-burger"></i>Recipes</a>
+            </li>
+            <li>
+                <a href="login.html"><i class="fa-solid fa-user"></i>Login</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="heroSection">
+        <div class="heroText">
+            <h1>Street Food Around The World</h1>
+            <p>Discover street food around the world</p>
+            <hr>
+            <a href="#recipe" class="btn__dark margin__top" style="color: rgb(226, 109, 0)">READ MORE</a>
+        </div>
+    </div>
+    
+    <!-- ara -->
+
+    <div id="recipe" class="recipeSection" style="background-color: rgba(255, 246, 246, 0.9);">
+        <div class="container">
+            <div id="af" class="panel active" style="background-image: url('../img/egypt.jpeg')">
+                <h3 id="africa">AFRICA</h3>
+                
+            </div>
+            <div id="ame" class="panel" style="background-image: url('../img/brazil.jpeg')">
+                <h3 id="america">AMERICA</h3>
+            </div>
+            <div id="asi" class="panel" style="background-image: url('../img/india.jpeg')">
+                <h3 id="asia">ASIA</h3>
+            </div>
+            <div id="eu" class="panel" style="background-image: url('../img/turkey.jpeg')">
+                <h3 id="europe">EUROPE</h3>
+            </div>
+            <div id="oce" class="panel" style="background-image: url('../img/nz.jpeg')">
+                <h3 id="oceania">OCEANIA</h3>
+
+                <!--the background images are only show when i try with "open with live server, i cant fix this problem"-->
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
